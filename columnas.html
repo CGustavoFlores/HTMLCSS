@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas</title>
+    <link rel="stylesheet" href="css/columnas.css">
+</head>
+<body>
+    <nav>
+        <button class="boton-menu" onclick="accion()" >Menu</button>
+        <a href="#" class="nav-enlace desaparece">Inicio</a>
+        <a href="#" class="nav-enlace desaparece">Servicios</a>
+        <a href="#" class="nav-enlace desaparece">Nosotros</a>
+        <a href="#" class="nav-enlace desaparece">Contacto</a>
+    </nav>
+
+    <button>ENVIAR</button>
+
+    <section class="padre">
+        <p class="columna"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem harum minus, architecto aliquam ex voluptas tempore reiciendis eius quod ipsam. Quidem molestias iure aspernatur dolor nostrum eligendi perferendis minima?</p>
+
+        <p class="columna">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam mollitia dolore quam perferendis libero dicta, odio repellat sint molestias possimus alias, impedit omnis ullam a minus incidunt tenetur similique.</p>
+
+        <p class="columna">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium enim quas. Optio nostrum sint exercitationem! Deserunt vitae fugit vero voluptatum eius beatae, esse delectus, eaque amet sequi quidem corporis?</p>
+    </section>
+    <script>
+        function accion() {
+            console.log('estad funcionando el boton')
+            var ancla =document.getElementsByClassName("nav-enlace");
+            for(var i=0;i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+</body>
+</html>
